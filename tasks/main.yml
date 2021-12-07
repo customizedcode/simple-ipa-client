@@ -1,0 +1,17 @@
+---
+# tasks file for simple-ipa-client
+
+  - name: install ipa package
+    dnf:
+      name: ipa-client
+      state: present
+
+  - name: simple ipa install
+    shell: >
+        ipa-client-install --hostname=`hostname -f`
+        --mkhomedir --unattended --password {{enroll_password_var}} 
+        --server={{ipa_server_fqdn_var}} --domain {{domain_var}} 
+        --realm {{realm_var}} 
+    args:
+      creates: /etc/ipa/ca.crt
+

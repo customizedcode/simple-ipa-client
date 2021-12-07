@@ -1,0 +1,8 @@
+---
+# defaults file for simple-ipa-client
+
+enroll_password_var: 'enrollpass'
+domain_var: 'customized.local'
+realm_var: 'CUSTOMIZED.LOCAL'
+ipa_server_fqdn_var: 'ipa.customized.local'
+
