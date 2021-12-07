@@ -24,9 +24,9 @@ become: yes
         var:  
           enroll_pass_var: 'password'  
           enroll_password_var: 'enrollpass'
-          domain_var: 'customized.local'
-          realm_var: 'CUSTOMIZED.LOCAL'
-          ipa_server_fqdn_var: 'ipa.customized.local'
+          domain_var: 'example.local'
+          realm_var: 'EXAMPLE.LOCAL'
+          ipa_server_fqdn_var: 'ipa.example.local'
 
 </pre>  
 
