@@ -4,7 +4,7 @@ simple-ipa-client
 Ansible role to install ipa client with simple options  
 
 Since this role is unattended install, you need to create the bulk passwords
-for this role when it executes.
+for this role prior to execution.
 
 <pre>
 $ kinit admin
